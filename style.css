@@ -4,7 +4,8 @@
 }
 header{
   height: 140px;
-  background-color: #333;
+  background-color: #424242;
+  background: linear-gradient(to bottom right, #0277BD, #7E57C2);
   position: relative;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
@@ -14,7 +15,7 @@ ul{
 .he{
 padding-top: 50px;
   font-size: 40px;
-  color: #000;
+  color: #B2DFDB;
 }
 .body-part{
   width: auto;
