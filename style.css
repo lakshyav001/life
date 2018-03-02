@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  height: 140px;
+  background-color: #333;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+ul{
+  list-style-type: none;
+}
+.he{
+padding-top: 50px;
+  font-size: 40px;
+  color: #000;
+}
+.body-part{
+  width: auto;
+
+  background-color: #999;
+}
+.ico{
+  font-size:50px;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  color: #000;
+}
+.eve-butns{
+
+  text-align: center;
+
+}
+.eve-1{
+  font-size: 30px;
+  margin-top: 10px;
+}
+.eve-1:active{
+  color: #111;
+}
+.form-control {
+    display: block;
+    width: 90%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding-left: 32px;
+    margin-left: 5%;
+}
