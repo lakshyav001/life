@@ -57,69 +57,6 @@
 </div>
 </div>
 
-
-
-
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBiUvPXndFf41n-IAVXCbfP5SMhFOrXfW4",
-    authDomain: "test-51c33.firebaseapp.com",
-    databaseURL: "https://test-51c33.firebaseio.com",
-    projectId: "test-51c33",
-    storageBucket: "",
-    messagingSenderId: "762694005146"
-  };
-  firebase.initializeApp(config);
-  var dbRef = firebase.database();
-  var contactsRef = dbRef.ref('contacts');
-
-  //load older conatcts as well as any newly added one...
-  contactsRef.on("child_added", function(snap) {
-    console.log("added", snap.key(), snap.val());
-    document.querySelector('#contacts')
-      .innerHTML += contactHtmlFromObject(snap.val());
-  });
-
-  //save contact
-  document.querySelector('.addValue')
-    .addEventListener("click", function( event ) {
-      event.preventDefault();
-      if( document.querySelector('#name').value != ''
-            || document.querySelector('#email').value != '' ){
-        contactsRef.push({
-          name: document.querySelector('#name').value,
-          email: document.querySelector('#email').value,
-          location: {
-            city: document.querySelector('#city').value,
-            state: document.querySelector('#state').value,
-            zip: document.querySelector('#zip').value
-          }
-        });
-        contactForm.reset();
-      } else {
-        alert('Please fill atlease name or email!');
-      }
-    }, false);
-
-  //prepare conatct object's HTML
-  function contactHtmlFromObject(contact){
-    console.log( contact );
-    var html = '';
-    html += '<li class="list-group-item contact">';
-      html += '<div>';
-        html += '<p class="lead">'+contact.name+'</p>';
-        html += '<p>'+contact.email+'</p>';
-        html += '<p><small title="'+contact.location.zip+'">'
-                  + contact.location.city + ', '
-                  + contact.location.state + '</small></p>';
-      html += '</div>';
-    html += '</li>';
-    return html;
-  }
-</script>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
