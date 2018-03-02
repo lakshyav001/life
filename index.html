@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     </style>
-  </head>
-  <body>
-<header>
-<h1 class="he text-center">hai this is new</h1>
-<div class="ico "><i class="fa fa-question-circle"></i></div>
+</head>
 
-</header>
-<div class="body-part">
-<div class="event-list">
-  <div class="event-head">
-    <h1 class="text-center">Select the event form the list</h1>
-  </div>
-<div class="eve-butns">
-  <ul>
-    <li class="btn-li"><button class="eve-1 btn btn-primary "type="button" name="button" id="event-1">accident case</button></li>
-    <li><button class="eve-1 btn btn-primary "type="button" name="button" id="event-2">accident case</button></li>
-        <li><button class="eve-1 btn btn-primary "type="button" name="button" id="event-3">accident case</button></li>
+<body>
+    <header>
+        <h1 class="he text-center">hai this is new</h1>
+        <div class="ico "><i class="fa fa-question-circle"></i></div>
+
+    </header>
+    <div class="body-part">
+        <div class="event-list">
+            <div class="event-head">
+                <h1 class="text-center">Select the event form the list</h1>
+            </div>
+            <div class="eve-butns">
+                <ul>
+                    <li class="btn-li"><button class="eve-1 btn btn-primary " type="button" name="button" id="event-1">accident case</button></li>
+                    <li><button class="eve-1 btn btn-primary " type="button" name="button" id="event-2">accident case</button></li>
+                    <li><button class="eve-1 btn btn-primary " type="button" name="button" id="event-3">accident case</button></li>
 
 
-  </ul>
+                </ul>
 
-</div>
-</div>
-<div class="">
-<h2 class="text-center">Enter intensity</h2>
-<div class="text-center">
-  <label class="radio-inline"><input type="radio" name="optradio">1</label>
-  <label class="radio-inline"><input type="radio" name="optradio">2</label>
-  <label class="radio-inline"><input type="radio" name="optradio">3</label>
-  <label class="radio-inline"><input type="radio" name="optradio">4</label>
-  <label class="radio-inline"><input type="radio" name="optradio">5</label>
-  <label class="radio-inline"><input type="radio" name="optradio">6</label>
-  <label class="radio-inline"><input type="radio" name="optradio">7</label>
-  <label class="radio-inline"><input type="radio" name="optradio">8</label>
-  <label class="radio-inline"><input type="radio" name="optradio">9</labe4>
+            </div>
+        </div>
+        <div class="">
+            <h2 class="text-center">Enter intensity</h2>
+            <div class="text-center">
+                <label class="radio-inline"><input type="radio" name="optradio">1</label>
+                <label class="radio-inline"><input type="radio" name="optradio">2</label>
+                <label class="radio-inline"><input type="radio" name="optradio">3</label>
+                <label class="radio-inline"><input type="radio" name="optradio">4</label>
+                <label class="radio-inline"><input type="radio" name="optradio">5</label>
+                <label class="radio-inline"><input type="radio" name="optradio">6</label>
+                <label class="radio-inline"><input type="radio" name="optradio">7</label>
+                <label class="radio-inline"><input type="radio" name="optradio">8</label>
+                <label class="radio-inline"><input type="radio" name="optradio">9</labe4>
 </div>
 </div>
 <form>
@@ -49,79 +51,80 @@
 
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</form>
-<div class="text-center">
-  <button class=" btn btn-primary"type="button" name="button" onclick="submit_datas()">Submit</button>
-</div>
-</div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            </form>
+            <div class="text-center">
+                <button class=" btn btn-primary" type="button" name="button" onclick="submit_datas()">Submit</button>
+            </div>
+        </div>
 
 
 
 
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBiUvPXndFf41n-IAVXCbfP5SMhFOrXfW4",
-    authDomain: "test-51c33.firebaseapp.com",
-    databaseURL: "https://test-51c33.firebaseio.com",
-    projectId: "test-51c33",
-    storageBucket: "",
-    messagingSenderId: "762694005146"
-  };
-  firebase.initializeApp(config);
-  var dbRef = firebase.database();
-  var contactsRef = dbRef.ref('contacts');
+        <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBiUvPXndFf41n-IAVXCbfP5SMhFOrXfW4",
+                authDomain: "test-51c33.firebaseapp.com",
+                databaseURL: "https://test-51c33.firebaseio.com",
+                projectId: "test-51c33",
+                storageBucket: "",
+                messagingSenderId: "762694005146"
+            };
+            firebase.initializeApp(config);
+            var dbRef = firebase.database();
+            var contactsRef = dbRef.ref('contacts');
 
-  //load older conatcts as well as any newly added one...
-  contactsRef.on("child_added", function(snap) {
-    console.log("added", snap.key(), snap.val());
-    document.querySelector('#contacts')
-      .innerHTML += contactHtmlFromObject(snap.val());
-  });
+            //load older conatcts as well as any newly added one...
+            contactsRef.on("child_added", function(snap) {
+                console.log("added", snap.key(), snap.val());
+                document.querySelector('#contacts')
+                    .innerHTML += contactHtmlFromObject(snap.val());
+            });
 
-  //save contact
-  document.querySelector('.addValue')
-    .addEventListener("click", function( event ) {
-      event.preventDefault();
-      if( document.querySelector('#name').value != ''
-            || document.querySelector('#email').value != '' ){
-        contactsRef.push({
-          name: document.querySelector('#name').value,
-          email: document.querySelector('#email').value,
-          location: {
-            city: document.querySelector('#city').value,
-            state: document.querySelector('#state').value,
-            zip: document.querySelector('#zip').value
-          }
-        });
-        contactForm.reset();
-      } else {
-        alert('Please fill atlease name or email!');
-      }
-    }, false);
+            //save contact
+            document.querySelector('.addValue')
+                .addEventListener("click", function(event) {
+                    event.preventDefault();
+                    if (document.querySelector('#name').value != '' ||
+                        document.querySelector('#email').value != '') {
+                        contactsRef.push({
+                            name: document.querySelector('#name').value,
+                            email: document.querySelector('#email').value,
+                            location: {
+                                city: document.querySelector('#city').value,
+                                state: document.querySelector('#state').value,
+                                zip: document.querySelector('#zip').value
+                            }
+                        });
+                        contactForm.reset();
+                    } else {
+                        alert('Please fill atlease name or email!');
+                    }
+                }, false);
 
-  //prepare conatct object's HTML
-  function contactHtmlFromObject(contact){
-    console.log( contact );
-    var html = '';
-    html += '<li class="list-group-item contact">';
-      html += '<div>';
-        html += '<p class="lead">'+contact.name+'</p>';
-        html += '<p>'+contact.email+'</p>';
-        html += '<p><small title="'+contact.location.zip+'">'
-                  + contact.location.city + ', '
-                  + contact.location.state + '</small></p>';
-      html += '</div>';
-    html += '</li>';
-    return html;
-  }
-</script>
+            //prepare conatct object's HTML
+            function contactHtmlFromObject(contact) {
+                console.log(contact);
+                var html = '';
+                html += '<li class="list-group-item contact">';
+                html += '<div>';
+                html += '<p class="lead">' + contact.name + '</p>';
+                html += '<p>' + contact.email + '</p>';
+                html += '<p><small title="' + contact.location.zip + '">' +
+                    contact.location.city + ', ' +
+                    contact.location.state + '</small></p>';
+                html += '</div>';
+                html += '</li>';
+                return html;
+            }
+        </script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
 </html>
